@@ -1,0 +1,18 @@
+<div class="w-full flex flex-col">
+    <div class="h-[300px] w-full flex items-center justify-center">
+      <div class="py-3 px-4 font-extrabold text-4xl text-zinc-600 border-2 border-blue-500">
+        BEKAS APP
+      </div>
+    </div>
+    <div #divpadre class="w-full flex flex-col items-center justify-center content-between">
+      <goTo *ngFor="let item of STONES"
+        class="my-2"
+        [name]="item.title"
+        [image]="item.img"
+        (lacosa)="redirect(item.url)">
+      </goTo>
+    </div>
+  </div>
+  <goTo></goTo>
+  <task></task>
+  <mytable></mytable>

@@ -1,0 +1,5 @@
+export * from './goTo/goTo.component'
+export * from './task/task.component'
+export * from './table/table.component'
+export * from './table/dynamic-row/dynamic-row.component'
+export * from './table/index'
